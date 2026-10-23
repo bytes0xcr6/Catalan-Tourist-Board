@@ -1,3 +1,5 @@
+> Operational signing now uses encrypted Foundry keystores. Follow [KEYSTORE_MIGRATION.md](KEYSTORE_MIGRATION.md); older raw private key environment instructions below are superseded.
+
 # ACT Coin (Agencia-Catalana-Turismo)
 ![image](https://github.com/CristianRicharte6/Catalan-Tourism-Board/assets/102038261/322d391f-8100-4961-9033-8257b2ac53ad)
 

@@ -1,3 +1,4 @@
+import { loadPrivateKeys } from './security/foundry-keystore.js';
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-gas-reporter";
@@ -28,11 +29,11 @@ const config: HardhatUserConfig = {
     hardhat: {},
     Mumbai: {
       url: "https://rpc.ankr.com/polygon_mumbai",
-      accounts: [process.env.PRIVATE_KEY_DEPLOYER!],
+      accounts: loadPrivateKeys("PRIVATE_KEY_DEPLOYER"),
     },
     Polygon: {
       url: "https://rpc.ankr.com/polygon",
-      accounts: [process.env.PRIVATE_KEY_DEPLOYER!],
+      accounts: loadPrivateKeys("PRIVATE_KEY_DEPLOYER"),
       gasPrice: 100000000000,
     },
   },
